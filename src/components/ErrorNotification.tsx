@@ -4,11 +4,7 @@ import { ErrorMessage } from '../types/Error';
 
 type Props = {
   error: ErrorMessage | null;
-  onAddTodo: (title: string) => Promise<void>;
   setError: React.Dispatch<React.SetStateAction<ErrorMessage | null>>;
-  fieldTitle: React.RefObject<HTMLInputElement>;
-  onChangeStatus: () => void;
-  hasTodos: boolean;
 };
 
 export const ErrorNotification: React.FC<Props> = ({ error, setError }) => {
